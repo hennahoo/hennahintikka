@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+	
+	
+	<title>Portfolio Henna Hintikka</title>
+	<link rel="stylesheet" href="henna_tyylit1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e0be930c64.js" crossorigin="anonymous"></script>
+
+    <!--apsu lisasi
+
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+     -->
+    
+    <!--       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+               <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+
+https://fontawesome.com/v4/get-started/
+
+    Copy the entire font-awesome directory into your project.
+    In the <head> of your html, reference the location to your font-awesome.min.css.
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    Check out the examples to start using Font Awesome!
+
+         
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+   -->
+
+   <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+
+
+
+
+</head>
+<body>
+    <section class="mina-header">
+<nav>
+    <!--<a href="index.html"><img src="images/logoh2.PNG"></a>  -->
+    <div class="nav-links" id="navLinks">
+        <!--<i class="fa fa-times" aria-hidden="true"></i> -->
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+
+
+        <ul>
+            <li><a href="">MINÄ</a></li>
+            <li><a href="">HARRASTUKSET</a></li>
+            <li><a href="">CV</a></li>
+        </ul>
+      </div>
+     <!-- <i class="fa fa-bars" aria-hidden="true"></i>-->
+     <i class="fa fa-bars" onclick="showMenu()"></i>
+
+
+</nav>
+<div class="text-box">
+    <h1> Henna Hintikka CV & Portfolio</h1>
+<!-- <h2> Hei, minä olen Henna</h2>  -->
+<!--<p>Olen valmistunut It-tradenomiksi.Liiketalouden tradenomi, tietojenkäsittely</p>  -->
+<a href="" class="hero-btn">Tämä on nappi</a>
+
+
+</div>
+</section>
+
+<!-- VALOKUVA GALLERIA-->
+
+<h2>Responsive Image Gallery</h2>
+
+<h4>Resize the browser window to see the effect.</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/logoh2.PNG">
+ <!--     <img src="logoh2.PNG" alt="kuva1" width="600" height="400">  -->
+          <img src="images/logoh2.PNG" alt="kuva1" width="42" height="42" style="vertical-align:middle">
+    </a>
+    <div class="desc">Kuva jossa logo</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/hand.jpg">
+ <!--     <img src="images/hand.jpg" alt="käsi" width="600" height="400">  -->
+          <img src="images/hand.jpg" alt="käsi" width="42" height="42" style="vertical-align:middle"> 
+    </a>
+    <div class="desc">Robotin käsi</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/maustepieni.jpg">
+ <!-- <img src="images/maustepieni.jpg" alt="3d" width="600" height="400">   -->
+      <img src="images/maustepieni.jpg" alt="3d" width="42" height="42" style="vertical-align:middle">       
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/woman.jpg">
+ <!-- <img src="images/woman.jpg" alt="nainen" width="600" height="400">   -->
+      <img src="images/woman.jpg" alt="nainen" width="42" height="42" style="vertical-align:middle">             
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+</div>
+
+
+<!--<section class="harraste">
+    <h1>Harrastukseni</h1>
+    <p>Vapaa-ajalla tykkään tehdä kaikkea mikä on vastapainoa ruutuajalle. Luonto on tärkeä paikka, metsä varsinkin.<br>
+    Olen myös kiinnostunut puettavasta teknologiasta (wearable technology), joissa pääsee toteuttamaan sekä koodipuolta että  kädentaitoja. Olen myös harjoitellu 3D mallien tekemistä, <br>
+    ja 3D-tulostimen käyttöä. 
+    </p>
+
+    <div class="row">
+        <div class="harraste-col">
+            <h3> Luonto </h3>
+            <p> Luonnossa </p>
+        </div>
+        <div class="harraste-col">
+            <h3> Ehkä nyt</h3>
+            <p> alkaa valkenemaan</p>
+        </div>
+        <div class="harraste-col">
+            <h3> jos tästä</h3>
+            <p>....tuleekin rivejä</p>
+        </div>
+
+    </div>
+
+</section> harraste loppuu-->
+
+<!--<section class="cv">    POISTA TAMA LOPUKSI!!!!!!!!!!!!
+    <h1>Curriculum vitae</h1>
+    <p></p>
+
+    <div class="row">
+        <div class="cv-col">
+            <img src="images/mukulamaki.jpg">
+            <div class="layer">
+                <h3> JOTAIN</h3>
+            </div>
+        </div>
+
+        <div class="cv-col">
+            <img src="images/passikuva_80.jpg">
+            <div class="layer">
+                <h3> OMA KUVA</h3>
+            </div>
+        </div> 
+
+        <div class="cv-col">
+            <img src="images/maustepieni.jpg">
+            <div class="layer">
+                <h3> JOTAIN 3</h3>
+            </div>
+        </div>
+
+    </div>  
+
+</section> --><!-- cv loppu-->
+
+<!--<section class="yhteys">
+    <h1>Ota yhteyttä</h1>
+    <p>Jos haluat keskustella lisää... niin iha turha toivo</p>
+
+    <div class="row">
+        <div class="yhteys-col">
+            <img src="images/hand.jpg">
+            <h3>Jotainjotain jotain</h3>
+            <p>Tekstiä tulee taas tahan vaikka jos silta sattuu tuntumaan.</p>
+        </div>
+        <div class="yhteys-col">
+            <img src="images/hand.jpg">
+            <h3>Jotainjotain jotain</h3>
+            <p>Tekstiä tulee taas tahan vaikka jos silta sattuu tuntumaan.</p>
+        </div>
+
+    </div>
+
+
+</section>  -->
+
+<!-- HIENOBOKSI-->
+<section class="hienoboksi">
+    <h1>Github - </h1>
+<a href="" class="hero-btn">Github</a>
+
+</section>
+
+
+
+
+
+<!-- FOOTER -->
+<section class="footer">
+    <h3> Henna Hintikka</h3>
+    <p>Yhteystiedot:</p>
+
+    <div class="icons">
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-github" aria-hidden="true"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+
+    <!--
+    <i class="fa fa-github" aria-hidden="true"></i>
+    <i class="fa fa-github" aria-hidden="true"></i>
+    <i class="fa fa-github" aria-hidden="true"></i>  -->
+
+
+   <!--    https://fontawesome.com/v4/examples/   
+    <div class="list-group">
+        <a class="list-group-item" href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
+        <a class="list-group-item" href="#"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Library</a>
+        <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Applications</a>
+        <a class="list-group-item" href="#"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; Settings</a>
+      </div>
+    -->
+</section>
+<!--
+in case its helpful to others: it has to be:
+fab fa-linkedin NOT
+fa fa-linkedin    -->
+
+
+
+<script>
+
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+    navLinks.style.right ="0";
+
+}
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+
+</script>
+
+
+
+    
+
+
+</body>
+    </html>
+    
