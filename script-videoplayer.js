@@ -3,7 +3,7 @@ const theaterBtn = document.querySelector(".theater-btn")
 const fullScreenBtn = document.querySelector(".full-screen-btn")
 const miniPlayerBtn = document.querySelector(".mini-player-btn")
 const muteBtn = document.querySelector(".mute-btn")
-const captionsBtn = document.querySelector(".captions-btn")
+//const captionsBtn = document.querySelector(".captions-btn")
 const speedBtn = document.querySelector(".speed-btn")
 const currentTimeElem = document.querySelector(".current-time")
 const totalTimeElem = document.querySelector(".total-time")
@@ -46,7 +46,7 @@ document.addEventListener("keydown", e => {
       skip(5)
       break
     case "c":
-      toggleCaptions()
+ //     toggleCaptions()
       break
   }
 })
@@ -108,16 +108,16 @@ function changePlaybackSpeed() {
 }
 
 // Captions
-const captions = video.textTracks[0]
-captions.mode = "hidden"
+//const captions = video.textTracks[0]
+//captions.mode = "hidden"
 
-captionsBtn.addEventListener("click", toggleCaptions)
+//captionsBtn.addEventListener("click", toggleCaptions)
 
-function toggleCaptions() {
-  const isHidden = captions.mode === "hidden"
-  captions.mode = isHidden ? "showing" : "hidden"
-  videoContainer.classList.toggle("captions", isHidden)
-}
+//function toggleCaptions() {
+//  const isHidden = captions.mode === "hidden"
+//  captions.mode = isHidden ? "showing" : "hidden"
+//  videoContainer.classList.toggle("captions", isHidden)
+//}
 
 // Duration
 video.addEventListener("loadeddata", () => {
