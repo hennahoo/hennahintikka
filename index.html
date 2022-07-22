@@ -254,7 +254,7 @@ https://fontawesome.com/v4/get-started/
      <h3>  Kissa......   </h3>
     <br>
     <br>
-	<canvas id="scene"></canvas>
+	<canvas id="lootikot"></canvas>
     <br>
     <br> 
     
@@ -337,18 +337,22 @@ function hideMenu(){
 
 
 <script>
+  var container = document.createElement( 'div' );
+  document.body.appendChild( container );
+  scene = new THREE.Scene();
+
+
 var ww = window.innerWidth,
 	wh = window.innerHeight;
 
 function init(){
 
 	/* WEBGL RENDERER */
-	renderer = new THREE.WebGLRenderer({canvas : document.getElementById('scene')});
+	renderer = new THREE.WebGLRenderer({canvas : document.getElementById('lootikot')});
 	renderer.setClearColor(0x3F3F3F);
 	renderer.setSize(ww,wh);
 
 	/* SCENE */
-	scene = new THREE.Scene();
 	//Add fog in my scene
 	//0x3f3f3f = the color that will be added on my object
 	//The minimum distance between the camera and the object to start the fog
