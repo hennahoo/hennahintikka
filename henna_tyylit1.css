@@ -211,8 +211,8 @@ nav .fa{
 .layer{
    /* background: rgba(226,0,0,0.7); */
     background: transparent;
-    height: 75%;
-    width: 75%;
+    height: 50%;
+    width: 50%;
     position: absolute;
     top: 0;
     left: 0;
@@ -410,8 +410,8 @@ div.gallery {
   }
   
   .slider > img {
-    flex: 0 0 calc(85% / var(--items-per-screen));
-    max-width: calc(85% / var(--items-per-screen));
+    flex: 0 0 calc(55% / var(--items-per-screen));
+    max-width: calc(55% / var(--items-per-screen));
     aspect-ratio: 16 / 9;
     padding: var(--img-gap);
     border-radius: 1rem;
