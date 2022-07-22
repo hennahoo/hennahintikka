@@ -386,6 +386,11 @@ div.gallery {
     --img-gap: .25rem;
   }
   
+  .kuvakaruselli {
+    margin: 0;
+  }
+
+
   .container {
     display: flex;
     justify-content: center;
@@ -403,8 +408,8 @@ div.gallery {
   }
   
   .slider > img {
-    flex: 0 0 calc(100% / var(--items-per-screen));
-    max-width: calc(100% / var(--items-per-screen));
+    flex: 0 0 calc(75% / var(--items-per-screen));
+    max-width: calc(75% / var(--items-per-screen));
     aspect-ratio: 16 / 9;
     padding: var(--img-gap);
     border-radius: 1rem;
