@@ -403,13 +403,13 @@ div.gallery {
     display: flex;
     flex-grow: 1;
     margin: 0 var(--img-gap);
-    transform: translateX(calc(var(--slider-index) * -100%));
+    transform: translateX(calc(var(--slider-index) * -90%));
     transition: transform 250ms ease-in-out;
   }
   
   .slider > img {
-    flex: 0 0 calc(75% / var(--items-per-screen));
-    max-width: calc(75% / var(--items-per-screen));
+    flex: 0 0 calc(85% / var(--items-per-screen));
+    max-width: calc(85% / var(--items-per-screen));
     aspect-ratio: 16 / 9;
     padding: var(--img-gap);
     border-radius: 1rem;
