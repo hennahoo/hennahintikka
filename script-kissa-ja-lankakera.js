@@ -21,7 +21,7 @@ var HEIGHT, WIDTH, windowHalfX, windowHalfY,
 
 //3D OBJECTS VARIABLES
 
-var hero;
+let hero;
 
 //INIT THREE JS, SCREEN AND MOUSE EVENTS
 
