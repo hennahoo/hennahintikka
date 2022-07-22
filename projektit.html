@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+	<title>Portfolio Henna Hintikka</title>
+	<link rel="stylesheet" href="henna_tyylit1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e0be930c64.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <section class="header">
+<nav>
+    <!-- <a href="index.html"><img src="images/logoh2.PNG"></a>  -->
+    <div class="nav-links" id="navLinks">
+        <!--<i class="fa fa-times" aria-hidden="true"></i> -->
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+
+
+        <ul>
+          <!--  <li><a href="mina.html">MINÄ</a></li>  -->
+            <li><a href="projektit.html">PROJEKTIT</a></li>
+            <li><a href="CV-Henna-Hintikka-2022.pdf">CV</a></li>
+        </ul>
+      </div>
+     <!-- <i class="fa fa-bars" aria-hidden="true"></i>-->
+     <i class="fa fa-bars" onclick="showMenu()"></i>
+
+
+</nav>
+<div class="text-box">
+    <h1> Henna Hintikka Projektit</h1>
+<h2>   - ohessa muutamia projekteja:</h2>
+
+<li>     ykkonen </li>
+<li>     kakkonen </li>
+<li>     kolmonen </li>
+
+
+</div>
+</section>
+
+
+
+<!-- -->
+<section class="cv">
+    <h1>Uusimmat projektit: </h1>
+    <p></p>
+
+    <div class="row">
+        <div class="cv-col">
+            <img src="images/soittorasia1.jpg">
+            <div class="layer">
+                <h3> Soittorasia Pico:lla.</h3>
+            </div>
+        </div>
+
+       <!-- <div class="cv-col">
+            <img src="images/passikuva_80.jpg">
+            <div class="layer">
+                <h3> OMA KUVA</h3>
+            </div>
+        </div> -->
+
+        <div class="cv-col">
+            <img src="images/rpi3.jpg">
+            <div class="layer">
+                <h3> Raspberry Pi, lämpötila ja kosteus mittaus.</h3>
+            </div>
+        </div>
+    </div>
+</section> <!-- cv loppu-->
+
+
+
+<section class="yhteys">
+    <h1>Ota yhteyttä</h1>
+    <p>Jos haluat keskustella lisää projekteista.</p>
+    <p>      - githubista löytyy myös lisätietoa.</p>
+
+
+
+
+</section>
+<!-- HIENOBOKSI-->
+<section class="hienoboksi">
+    <h1>Github - </h1>
+<a href="" class="hero-btn">Github</a>
+</section>
+
+
+
+
+<!-- FOOTER -->
+<section class="footer">
+    <h3> Henna Hintikka</h3>
+    <p>Yhteystiedot:</p>
+
+    <div class="icons">
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-github" aria-hidden="true"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+</section>
+
+
+<script>
+
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+    navLinks.style.right ="0";
+
+}
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+</script>
+
+  
+
+</body>
+</html>
+    
