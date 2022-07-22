@@ -396,6 +396,7 @@ div.gallery {
   }
   
   .media-group {
+    position: relative;
     grid-auto-columns: 1fr;
   }
   
