@@ -1,4 +1,6 @@
 //THREEJS RELATED VARIABLES 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js" defer></script> 
+
 
 var scene,
     camera, fieldOfView, aspectRatio, nearPlane, farPlane,
