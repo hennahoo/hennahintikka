@@ -258,16 +258,6 @@ https://fontawesome.com/v4/get-started/
     <br>
         <!-- My scene -->
         <canvas id="scene"></canvas>
-        <div class="element">
-            <h2>Hi !</h2>
-            <p>This demo shows you how to connect DOM elements with Three Js objects</p>
-            <p>I hope you will enjoy ;)</p>
-            <span>Mamboleoo</span>
-        </div>
-        <a href="http://mamboleoo.be/learnThree/" target="_blank" class="element">
-            Look at me, I'm a link ! <br />Yeah so awesome :)
-        </a>
-        <img class="element" src="http://placebear.com/150/150" />
     <br>
     <br> 
     
@@ -362,97 +352,92 @@ var container = document.createElement( 'div' );
 
 //THREEJS RELATED VARIABLES 
 
-var renderer, scene, camera, cubes, vector;
-
 var ww = window.innerWidth,
 	wh = window.innerHeight;
 
 function init(){
 
+	/* WEBGL RENDERER */
 	renderer = new THREE.WebGLRenderer({canvas : document.getElementById('scene')});
+	renderer.setClearColor(0x3F3F3F);
 	renderer.setSize(ww,wh);
 
+	/* SCENE */
 	scene = new THREE.Scene();
+	//Add fog in my scene
+	//0x3f3f3f = the color that will be added on my object
+	//The minimum distance between the camera and the object to start the fog
+	//Any element beyond 950px from the camera will be completely grey
+	// < 500px = no fog
+	// > 500px = fog
+	// > 950px = invisible
+	scene.fog = new THREE.Fog( 0x3f3f3f, 500, 1000 );
 
-	camera = new THREE.PerspectiveCamera(50,ww/wh, 0.1, 10000 );
-	camera.position.set(0,0,500);
+	/* CAMERA */
+	camera = new THREE.PerspectiveCamera(50, ww/wh, 1, 10000 );
+	camera.position.set(0, 250, 700);
+	camera.lookAt(new THREE.Vector3(0,0,0));
 	scene.add(camera);
 
+
+	/* LIGHT */
 	light = new THREE.DirectionalLight(0xffffff, 1);
-	light.position.set( 0, 0, 500 );
+	light.position.set( 0, 500, 100 );
 	scene.add(light);
 
-	//Vector use to get position of vertice
-	vector = new THREE.Vector3();
+	createBox();
 
-	//Generate cubes on the scene
-	createCubes();
+	renderer.render(scene,camera);
 
-	//Render my scene
-	render();
-}
+	animate();
+};
 
+function createBox(){
 
-var createCubes = function(){
-
-	//Create an object 3D that contains my cubes
 	cubes = new THREE.Object3D();
 
-	//Simple geometry and material
-	var geometry = new THREE.BoxGeometry(50,50,50);
-	var material = new THREE.MeshLambertMaterial({color: 0x00ff00});
-	for(var i=0;i<3;i++){
-		var cube = new THREE.Mesh(geometry, material);
+	geometry = new THREE.BoxGeometry(50,50,50);
+	texture = new THREE.MeshLambertMaterial({color:0x00ff00 });
+
+	for(var i=0;i<70;i++){
+		cube = new THREE.Mesh(geometry, texture);
+
+		cube.position.x = (Math.random()-.5)*ww;
+		cube.position.y = (Math.random()-.5)*wh;
+
+		//Create a random variable for each cube so they will move "randomly"
+		//Create a random speed for my cube (just for fun)
+		cube.random = parseInt((Math.random()-.5)*500);
+		cube.speed = Math.random()+.1;
+
 		cubes.add(cube);
 	}
 
-	//Add my cubes on the scene
 	scene.add(cubes);
+
 };
 
-var moveDom = function(i){
+var animate = function () {
 
-	//Vector equal a vertice from the cube (it can be any vertice)
-    vector = cubes.children[i].geometry.vertices[i].clone();
+	requestAnimationFrame(animate);
 
-    //Apply the matrix of its cube (rotation & translation)
-    vector.applyMatrix4(cubes.children[i].matrix);
+	for(var i=0;i<70;i++){
 
-    //Get the position of the vector according to the rendered scene
-    vector.project(camera);
+		var cube = cubes.children[i];
 
-    //Convert the vector values to our scene size (here it's the screen size)
-	vector.x = (vector.x * ww/2) + ww/2;
-	vector.y = -(vector.y * wh/2) + wh/2;
+		//Move my cube
+		cube.position.z = Math.sin(cube.random/70)*500;
 
-    //Get the DOM element and apply transforms on it
-   	document.querySelectorAll(".element")[i].style.webkitTransform = "translate("+vector.x+"px,"+vector.y+"px)";
-   	document.querySelectorAll(".element")[i].style.transform = "translate("+vector.x+"px,"+vector.y+"px)";
-};
+		//Increase the start position of the cube
+		cube.random += cube.speed;
 
-
-var counter = 0;
-var render = function (a) {
-	requestAnimationFrame(render);
-
-	counter++;
-
-	//Move my cubes
-	for(var i=0;i<3;i++){
-		cubes.children[i].position.x = Math.cos((counter+i*150)/200)*(ww/6+i*80);
-		cubes.children[i].position.y = Math.sin((counter+i*150)/200)*(70+i*80);
-		cubes.children[i].rotation.x += .001*i+.002;
-		cubes.children[i].rotation.y += .001*i+.02;
-
-		//Move my dom elements
-		moveDom(i);
 	}
-	
+
+
 	renderer.render(scene, camera);
 };
 
 init();
-
 
 </script>
 
