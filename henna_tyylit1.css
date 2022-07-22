@@ -9,12 +9,12 @@ marginaalit ja paddingit
 }
 
 .header{
-    min-height: 75vh;
+    min-height: 70vh;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/woman.jpg);
     background-position: center;
     background-size: cover;
-    position: relative; 
+    position: relative;
 }
 
 .header2{
@@ -26,11 +26,19 @@ marginaalit ja paddingit
     position: relative; 
 }
 
+
+body{
+  background-color: #cac7c9;
+}
+
+
+
 nav{
     display:flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    font-size: 30px;     
 }
 
 nav img{
@@ -40,6 +48,7 @@ nav img{
 .nav-links{
     flex: 1;
     text-align: right;
+    font-size: 30px; 
 }
 
 .nav-links ul li{
@@ -52,7 +61,7 @@ nav img{
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .nav-links ul li::after{
@@ -334,6 +343,8 @@ h3{
 
 
 
+
+
 /* KUVAKARUSELLIIN  CSS TYYLIT
 */
 
@@ -343,7 +354,7 @@ h3{
   }
   
   :root {
-    --handle-size: 3rem;
+    --handle-size: 5rem;
     --img-gap: .25rem;
   }
   
@@ -362,15 +373,15 @@ h3{
   }
   
   .slider {
-    --items-per-screen: 3;
+    --items-per-screen: 4;
     --slider-index: 0;
     display: flex;
     flex-grow: 1;
     margin: 0 var(--img-gap);
-    transform: translateX(calc(var(--slider-index) * -90%));
+    transform: translateX(calc(var(--slider-index) * -100%));
     transition: transform 250ms ease-in-out;
-    padding-right: 30px;
-    padding-left: 30px;     
+    padding-right: 10px;
+    padding-left: 10px;     
     background-color: rgba(255, 255, 255, .5);
   }
   
@@ -448,10 +459,6 @@ h3{
 
 /* VIDEOPLAYERIN  CSS TYYLIT
 */
-
-
-
-
 
   .video-container {
     position: relative;
