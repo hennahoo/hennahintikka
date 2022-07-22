@@ -1,5 +1,7 @@
 //THREEJS RELATED VARIABLES 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js" defer></script> 
+var container = document.createElement( 'div' );
+document.body.appendChild( container );
+scene = new THREE.Scene();
 
 
 var scene,
