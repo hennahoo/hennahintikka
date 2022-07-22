@@ -25,11 +25,9 @@ nav{
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-
 }
 
 nav img{
-
     width: 150;
 }
 
@@ -39,7 +37,6 @@ nav img{
 }
 
 .nav-links ul li{
-
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
@@ -47,15 +44,12 @@ nav img{
 }
 
 .nav-links ul li a{
-
     color: #fff;
     text-decoration: none;
-    /*font-size: 13px; */ 
     font-size: 20px;
 }
 
 .nav-links ul li::after{
-
     content: '';
     width: 0%;
     height: 2px;
@@ -66,10 +60,8 @@ nav img{
 }
 
 .nav-links ul li:hover::after{
-
     width: 100%;
 }
-
 
 .text-box{
     width: 90%;
@@ -141,34 +133,37 @@ nav .fa{
     .nav-links ul{
         padding: 30px;
     }
+}
 
-    }
 
-    .harraste{
+.harraste{
        width: 80%;
        margin: auto;
        text-align: center;
        padding-top: 100px; 
        font-size: 16px;
        font-weight: 600;
-    }
-    h1{
+}
+
+h1{
         font-size: 36px;
         font-weight: 600;
-    }
-    p{
+}
+p{
         color: #777;
-        font-size: 14;
+        font-size: 16;
         font-weight: 300;
         line-height: 22px;
         padding: 10px;
-    }
-    .row{
+}
+
+.row{
         margin-top: 5%;
         display: flex;
         justify-content: space-between;
-    }
-    .harraste-col{
+}
+
+.harraste-col{
         flex-basis: 31%;
         background: lightcoral;
         border-radius: 10px;
@@ -176,38 +171,51 @@ nav .fa{
         padding: 20px 12px;
         box-sizing: border-box;
 
-    }
-    h3{
+}
+
+h3{
         text-align: center;
         font-weight: 600;
         margin: 10 px 0;
-    }
-    .harraste-col:hover{
+}
+
+.harraste-col:hover{
         box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-    }
-    @media(max-width:700px){                                        /*tama korjaa mobiili/tabletti naytoille sopivaksi*/
+}
+
+@media(max-width:700px){                                        /*tama korjaa mobiili/tabletti naytoille sopivaksi*/
         .row{
             flex-direction: column;
         }
-    }
+}
+
+
+
+
 .cv{
-    width: 75%;
+    width: 85%;
     margin: auto;
     text-align: center;
     padding-top:  50px;
 }
+
 .cv-col{
-    flex-basis: 32%;
-    border-radius: 10px;
+    flex-basis: 50%;
+    border-radius: 20px;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
 }
+
 .cv-col img{
     width: 50%;
     display: block; /*jos kuvat olisivat saman kokoisia, tama pyoristaisi alareunan*/
 
 }
+
+
+
+
 .layer{
    /* background: rgba(226,0,0,0.7); */
     background: transparent;
@@ -218,10 +226,11 @@ nav .fa{
     left: 0;
     transition: 0.5s; /*viive jolla vari vaihtuu kun kursrilla osoitetaan*/
 }
+
 .layer:hover{
     background: rgba(226,0,0,0.7);
-
 }
+
 .layer h3{
     width: 100%;
     font-weight: 500;
@@ -234,10 +243,12 @@ nav .fa{
     opacity: 0;
     transition: 0.5s;
 }
+
 .layer:hover h3{
     bottom: 49%;
     opacity: 1;
 }
+
 .yhteys{
 
     width: 80%;
@@ -246,24 +257,29 @@ nav .fa{
     padding-top: 100px;
 
 }
+
 .yhteys-col{
     flex-basis:31%;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
 }
+
 .yhteys-col img{
     width: 100%;
     border-radius: 10px;
 }
+
 .yhteys-col p{
     padding: 0;
 }
+
 .yhteys-col h3{
     margin-top: 16px;
     margin-bottom: 15px;
     text-align: left;
 }
+
 .hienoboksi{
     margin:  100px auto;
     width: 80%;
@@ -274,12 +290,14 @@ nav .fa{
     text-align: center;
     padding: 100px 0;
 }
+
 .hienoboksi h1{
     color:#777;
     margin-bottom: 40px;
     padding-left: 0;
 
 }
+
 @media(max-width: 700px){
     .cta h1{
         font-size: 24px;
@@ -291,6 +309,7 @@ nav .fa{
     text-align: center;
     padding: 30px 0;
 }
+
 .footer h4{
     margin-bottom: 25px;
     margin-top: 20px;
@@ -304,73 +323,7 @@ nav .fa{
     padding: 18px 0;
 }
 
-/* mina sivu */
-.mina-header{
-    height: 50vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/coode.jpg);
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color:#fff;
-    padding: 15px;
-    position: relative;         /* Henna H,  CV ja Portfolio   tekstin positio,  keskelle ylä banneria.         */
-}
 
-/* GALLERIAN */
-
-div.gallery {
-    border: 1px solid #ccc;
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 50%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  .responsive {
-    margin:  50px auto;
-    padding: 10 10px;
-    float: left;
- /* width: 24.99999%;
-    height: 24.99999%;
-*/
-    width: 500px;
-    height: 400px;
-
-  }
-  
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
-  
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 
 
 
