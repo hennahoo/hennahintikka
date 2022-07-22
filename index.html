@@ -345,9 +345,13 @@
       scene = new THREE.Scene();
     
     
-    var ww = window.innerWidth,
-        wh = window.innerHeight;
+//    var ww = window.innerWidth,
+//        wh = window.innerHeight;
+      var ww = 1024,
+          wh = 400;
     
+
+
     function init(){
     
         /* WEBGL RENDERER */
@@ -368,14 +372,14 @@
     
         /* CAMERA */
         camera = new THREE.PerspectiveCamera(50, ww/wh, 1, 10000 );
-        camera.position.set(0, 250, 700);
+        camera.position.set(0, 250, 300);
         camera.lookAt(new THREE.Vector3(0,0,0));
         scene.add(camera);
     
     
         /* LIGHT */
         light = new THREE.DirectionalLight(0xffffff, 1);
-        light.position.set( 0, 500, 100 );
+        light.position.set( 0, 200, 100 );
         scene.add(light);
     
         createBox();
@@ -389,10 +393,10 @@
     
         cubes = new THREE.Object3D();
     
-        geometry = new THREE.BoxGeometry(50,50,50);
+        geometry = new THREE.BoxGeometry(20,20,20);
         texture = new THREE.MeshLambertMaterial({color:0x00ff00 });
     
-        for(var i=0;i<70;i++){
+        for(var i=0;i<30;i++){
             cube = new THREE.Mesh(geometry, texture);
     
             cube.position.x = (Math.random()-.5)*ww;
