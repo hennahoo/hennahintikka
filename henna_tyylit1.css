@@ -191,7 +191,7 @@ nav .fa{
         }
     }
 .cv{
-    width: 80%;
+    width: 50%;
     margin: auto;
     text-align: center;
     padding-top:  50px;
@@ -204,15 +204,15 @@ nav .fa{
     overflow: hidden;
 }
 .cv-col img{
-    width: 100%;
+    width: 50%;
     display: block; /*jos kuvat olisivat saman kokoisia, tama pyoristaisi alareunan*/
 
 }
 .layer{
    /* background: rgba(226,0,0,0.7); */
     background: transparent;
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    width: 50%;
     position: absolute;
     top: 0;
     left: 0;
