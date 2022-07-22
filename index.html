@@ -12,27 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e0be930c64.js" crossorigin="anonymous"></script>
 
-    <!--apsu lisasi
-
-    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
-     -->
-    
-    <!--       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
-               <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+    <!--
 
 https://fontawesome.com/v4/get-started/
-
     Copy the entire font-awesome directory into your project.
     In the <head> of your html, reference the location to your font-awesome.min.css.
-
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
     Check out the examples to start using Font Awesome!
-
-
             -->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 
@@ -61,7 +49,7 @@ https://fontawesome.com/v4/get-started/
     <h1> Henna Hintikka CV & Portfolio</h1>
 <h2> Hei, minä olen Henna</h2>
 <p>Tervetuloa portfolio sivuilleni!</p>
-<a href="" class="hero-btn">Tämä on nappi</a>
+<!--  <a href="" class="hero-btn">Tämä on nappi</a>  -->
 
 
 </div>
@@ -74,23 +62,170 @@ https://fontawesome.com/v4/get-started/
     ja 3D-tulostimen käyttöä. 
     </p>
 
-    <div class="row">
-        <div class="harraste-col">
-            <h3> Luonto </h3>
-            <p> idea ennenkuin näkee tämän sivulla....</p>
-        </div>
-        <div class="harraste-col">
-            <h3> Ehkä nyt</h3>
-            <p> alkaa valkenemaan</p>
-        </div>
-        <div class="harraste-col">
-            <h3> jos tästä</h3>
-            <p>....tuleekin rivejä</p>
-        </div>
 
+
+    <h2 class="section-title">Trending now</h2>
+
+    <div class="media-container">
+      <div class="media-scroller">
+    
+        <!--   Group 1 -->
+        <div class="media-group" id="group-1">
+          <div class="media-element">
+            <img
+              src="images/jarvi1.jpg"
+              alt="">
+          </div>
+          <div class="media-element">
+            <img
+              src="images/jarvi2.jpg"
+              alt="">
+          </div>
+          <div class="media-element">
+            <img
+              src="images/jarvi3.jpg"
+              alt="">
+          </div>
+          <div class="media-element">
+            <img
+              src="images/jarvi4.jpg"
+              alt="">
+          </div>
+          <div class="media-element">
+            <img
+              src="images/metsa.jpg"
+              alt="">
+          </div>
+    
+          <a class="next" href="#group-2" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+    
+        <!-- Group 2   -->
+        <div class="media-group" id="group-2">
+          <a class="previous" href="#group-1">
+            <svg>
+              <use href="#previous"></use>
+            </svg>
+          </a>
+          <div class="media-element">
+            <img
+            src="images/metsa2.jpg"
+              alt="">
+          </div>
+          <div class="media-element">
+            <img
+            src="images/metsa3.jpg"
+              alt="">
+          </div>
+          <div class="media-element">
+            <img
+            src="images/rpi3.jpg"
+              alt="">
+          </div>
+          <div class="media-element">
+            <img
+            src="images/rpi2.jpg"
+              alt="">
+          </div>
+          <div class="media-element">
+            <img
+            src="images/pico1.jpg"
+              alt="">
+          </div>
+          <a class="next" href="#group-3" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+    
+        <!-- Group 3   -->
+        <div class="media-group" id="group-3">
+          <a class="previous" href="#group-2">
+            <svg>
+              <use href="#previous"></use>
+            </svg>
+          </a>
+          <div class="media-element">
+            <img
+            src="images/pico2.jpg"
+              alt="">
+          </div>
+          <div class="media-element">
+            <img
+            src="images/pico3.jpg"
+              alt="">
+          </div>
+          <div class="media-element">
+            <img
+            src="images/pico4.jpg"
+              alt="">
+          </div>
+          <div class="media-element">
+            <img
+            src="images/pico5.jpg"
+              alt="">
+          </div>
+          <div class="media-element">
+            <img
+            src="images/soittorasia1.jpg"
+              alt="">
+          </div>
+          <a class="next" href="#group-4" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+    
+    
+    
+        <div class="navigation-indicators">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+    
+      </div>
     </div>
+    
+    
+    <svg>
+      <symbol id="next" viewBox="0 0 256 512">
+        <path fill="white"
+          d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+      </symbol>
+    
+      <symbol id="previous" viewBox="0 0 256 512">
+        <path fill="white"
+          d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+      </symbol>
+    </svg>
+                                        <!-- 
+                                        <div class="row">
+                                            <div class="harraste-col">
+                                                <h3> Luonto </h3>
+                                                <p> idea ennenkuin näkee tämän sivulla....</p>
+                                            </div>
+                                            <div class="harraste-col">
+                                                <h3> Ehkä nyt</h3>
+                                                <p> alkaa valkenemaan</p>
+                                            </div>
+                                            <div class="harraste-col">
+                                                <h3> jos tästä</h3>
+                                                <p>....tuleekin rivejä</p>
+                                            </div>
 
-</section> <!-- harraste loppuu-->
+                                        </div>
+                                        harraste loppuu-->
+</section> 
+
+
 
 <section class="cv">
     <h1>Curriculum vitae</h1>
