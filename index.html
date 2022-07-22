@@ -23,6 +23,10 @@ https://fontawesome.com/v4/get-started/
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
+    
+<!-- KUVA KARUSELLIIN SKRIPTI -->
+    <script src="script.js" defer></script>
+
 
 </head>
 <body>
@@ -66,146 +70,50 @@ https://fontawesome.com/v4/get-started/
 
     <h2 class="section-title">Kuvia harrastuksista:</h2>
 
-    <div class="media-container">
-      <div class="media-scroller">
-    
-        <!--   Group 1 -->
-        <div class="media-group" id="group-1">
-          <div class="media-element">
-            <img
-              src="images/jarvi1.jpg"
-              alt="">
-          </div>
-          <div class="media-element">
-            <img
-              src="images/jarvi2.jpg"
-              alt="">
-          </div>
-          <div class="media-element">
-            <img
-              src="images/jarvi3.jpg"
-              alt="">
-          </div>
-          <div class="media-element">
-            <img
-              src="images/jarvi4.jpg"
-              alt="">
-          </div>
-          <div class="media-element">
-            <img
-              src="images/metsa.jpg"
-              alt="">
-          </div>
-    
-          <a class="next" href="#group-2" aria-label="next">
-            <svg>
-              <use href="#next"></use>
-            </svg>
-          </a>
+
+
+
+    <div class="row">
+        <div class="header">
+          <h3 class="title">Title</h3>
+          <div class="progress-bar"></div>
         </div>
-    
-        <!-- Group 2   -->
-        <div class="media-group" id="group-2">
-          <a class="previous" href="#group-1">
-            <svg>
-              <use href="#previous"></use>
-            </svg>
-          </a>
-          <div class="media-element">
-            <img
-            src="images/metsa2.jpg"
-              alt="">
+        <div class="container">
+          <button class="handle left-handle">
+            <div class="text">&#8249;</div>
+          </button>
+          <div class="slider">
+            <img src="images/metsa1.jpg"> 
+            <img src="images/metsa2.jpg">
+            <img src="images/metsa3.jpg"> 
+            <img src="images/jarvi1.jpg">
+            <img src="images/jarvi2.jpg"> 
+            <img src="images/jarvi3.jpg">
+            <img src="images/jarvi2.jpg"> 
+            <img src="images/jarvi3.jpg">
+            <img src="images/ledit.jpg"> 
+            <img src="images/rpi3.jpg">
+            <img src="images/soittorasia1.jpg"> 
+            <img src="images/3d3.jpg">
           </div>
-          <div class="media-element">
-            <img
-            src="images/metsa3.jpg"
-              alt="">
-          </div>
-          <div class="media-element">
-            <img
-            src="images/rpi3.jpg"
-              alt="">
-          </div>
-          <div class="media-element">
-            <img
-            src="images/rpi2.jpg"
-              alt="">
-          </div>
-          <div class="media-element">
-            <img
-            src="images/pico1.jpg"
-              alt="">
-          </div>
-          <a class="next" href="#group-3" aria-label="next">
-            <svg>
-              <use href="#next"></use>
-            </svg>
-          </a>
-        </div>
-    
-        <!-- Group 3   -->
-        <div class="media-group" id="group-3">
-          <a class="previous" href="#group-2">
-            <svg>
-              <use href="#previous"></use>
-            </svg>
-          </a>
-          <div class="media-element">
-            <img
-            src="images/pico2.jpg"
-              alt="">
-          </div>
-          <div class="media-element">
-            <img
-            src="images/pico3.jpg"
-              alt="">
-          </div>
-          <div class="media-element">
-            <img
-            src="images/pico4.jpg"
-              alt="">
-          </div>
-          <div class="media-element">
-            <img
-            src="images/pico5.jpg"
-              alt="">
-          </div>
-          <div class="media-element">
-            <img
-            src="images/soittorasia1.jpg"
-              alt="">
-          </div>
-          <a class="next" href="#group-4" aria-label="next">
-            <svg>
-              <use href="#next"></use>
-            </svg>
-          </a>
-        </div>
-    
-    
-    
-        <div class="navigation-indicators">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-    
+
+          <button class="handle right-handle">
+          <div class="text">&#8250;</div>
+        </button>
       </div>
     </div>
-    
-    
-    <svg>
-      <symbol id="next" viewBox="0 0 256 512">
-        <path fill="white"
-          d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
-      </symbol>
-    
-      <symbol id="previous" viewBox="0 0 256 512">
-        <path fill="white"
-          d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
-      </symbol>
-    </svg>
+
+
+
+
+
+
+
+
+
+
+
+
                                         <!-- 
                                         <div class="row">
                                             <div class="harraste-col">
