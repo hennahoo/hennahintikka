@@ -386,10 +386,6 @@ div.gallery {
     --img-gap: .25rem;
   }
   
-  body {
-    margin: 0;
-  }
-  
   .container {
     display: flex;
     justify-content: center;
@@ -457,17 +453,6 @@ div.gallery {
     transform: scale(1.2);
   }
   
-  .header {
-    display: flex;
-    justify-content: space-between;
-    padding: .5rem calc(var(--img-gap) * 2 + var(--handle-size));
-    align-items: center;
-  }
-  
-  .title {
-    font-size: 2rem;
-    margin: 0;
-  }
   
   .progress-bar {
     display: flex;
@@ -497,7 +482,3 @@ div.gallery {
     }
   }
   
-  body {
-    background-color: #333;
-    color: white;
-  }
