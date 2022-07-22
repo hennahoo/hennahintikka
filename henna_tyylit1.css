@@ -390,6 +390,8 @@ div.gallery {
   
   .kuvakaruselli {
     margin: 0;
+    padding-right: 30px;
+    padding-left: 30px;      
   }
 
 
