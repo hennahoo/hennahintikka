@@ -191,7 +191,7 @@ nav .fa{
         }
     }
 .cv{
-    width: 50%;
+    width: 75%;
     margin: auto;
     text-align: center;
     padding-top:  50px;
@@ -211,8 +211,8 @@ nav .fa{
 .layer{
    /* background: rgba(226,0,0,0.7); */
     background: transparent;
-    height: 50%;
-    width: 50%;
+    height: 75%;
+    width: 75%;
     position: absolute;
     top: 0;
     left: 0;
