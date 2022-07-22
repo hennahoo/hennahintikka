@@ -344,95 +344,92 @@
       document.body.appendChild( container );
       scene = new THREE.Scene();
     
-    
-    var ww = (window.innerWidth - 200),
-        wh = (window.innerHeight - 300);
+      var ww = window.innerWidth,
+	      wh = window.innerHeight;
+
+            function init(){
+
+                /* WEBGL RENDERER */
+                renderer = new THREE.WebGLRenderer({canvas : document.getElementById('scene')});
+                renderer.setClearColor(0x3F3F3F);
+                renderer.setSize(ww,wh);
+
+                /* SCENE */
+                scene = new THREE.Scene();
+                //Add fog in my scene
+                //0x3f3f3f = the color that will be added on my object
+                //The minimum distance between the camera and the object to start the fog
+                //Any element beyond 950px from the camera will be completely grey
+                // < 500px = no fog
+                // > 500px = fog
+                // > 950px = invisible
+                scene.fog = new THREE.Fog( 0x3f3f3f, 500, 1000 );
+
+                /* CAMERA */
+                camera = new THREE.PerspectiveCamera(50, ww/wh, 1, 10000 );
+                camera.position.set(0, 250, 700);
+                camera.lookAt(new THREE.Vector3(0,0,0));
+                scene.add(camera);
 
 
+                /* LIGHT */
+                light = new THREE.DirectionalLight(0xffffff, 1);
+                light.position.set( 0, 500, 100 );
+                scene.add(light);
 
-    function init(){
-    
-        /* WEBGL RENDERER */
-        renderer = new THREE.WebGLRenderer({canvas : document.getElementById('lootikot')});
-        renderer.setClearColor(0x3F3F3F);
-        renderer.setSize(ww,wh);
-    
-        /* SCENE */
-        scene = new THREE.Scene();
-        //Add fog in my scene
-        //0x3f3f3f = the color that will be added on my object
-        //The minimum distance between the camera and the object to start the fog
-        //Any element beyond 950px from the camera will be completely grey
-        // < 500px = no fog
-        // > 500px = fog
-        // > 950px = invisible
-        scene.fog = new THREE.Fog( 0x3f3f3f, 500, 1000 );
-    
-        /* CAMERA */
-        camera = new THREE.PerspectiveCamera(50, ww/wh, 1, 10000 );
-        camera.position.set(0, 250, 300);
-        camera.lookAt(new THREE.Vector3(0,0,0));
-        scene.add(camera);
-    
-    
-        /* LIGHT */
-        light = new THREE.DirectionalLight(0xffffff, 1);
-        light.position.set( 0, 200, 100 );
-        scene.add(light);
-    
-        createBox();
-    
-        renderer.render(scene,camera);
-    
-        animate();
-    };
-    
-    function createBox(){
-    
-        cubes = new THREE.Object3D();
-    
-        geometry = new THREE.BoxGeometry(20,20,20);
-        texture = new THREE.MeshLambertMaterial({color:0x00ff00 });
-    
-        for(var i=0;i<30;i++){
-            cube = new THREE.Mesh(geometry, texture);
-    
-            cube.position.x = (Math.random()-.5)*ww;
-            cube.position.y = (Math.random()-.5)*wh;
-    
-            //Create a random variable for each cube so they will move "randomly"
-            //Create a random speed for my cube (just for fun)
-            cube.random = parseInt((Math.random()-.5)*500);
-            cube.speed = Math.random()+.1;
-    
-            cubes.add(cube);
-        }
-    
-        scene.add(cubes);
-    
-    };
-    
-    var animate = function () {
-    
-        requestAnimationFrame(animate);
-    
-        for(var i=0;i<70;i++){
-    
-            var cube = cubes.children[i];
-    
-            //Move my cube
-            cube.position.z = Math.sin(cube.random/70)*500;
-    
-            //Increase the start position of the cube
-            cube.random += cube.speed;
-    
-        }
-    
-    
-        renderer.render(scene, camera);
-    };
-    
-    init();
+                createBox();
+
+                renderer.render(scene,camera);
+
+                animate();
+            };
+
+            function createBox(){
+
+                cubes = new THREE.Object3D();
+
+                geometry = new THREE.BoxGeometry(50,50,50);
+                texture = new THREE.MeshLambertMaterial({color:0x00ff00 });
+
+                for(var i=0;i<70;i++){
+                    cube = new THREE.Mesh(geometry, texture);
+
+                    cube.position.x = (Math.random()-.5)*ww;
+                    cube.position.y = (Math.random()-.5)*wh;
+
+                    //Create a random variable for each cube so they will move "randomly"
+                    //Create a random speed for my cube (just for fun)
+                    cube.random = parseInt((Math.random()-.5)*500);
+                    cube.speed = Math.random()+.1;
+
+                    cubes.add(cube);
+                }
+
+                scene.add(cubes);
+
+            };
+
+            var animate = function () {
+
+                requestAnimationFrame(animate);
+
+                for(var i=0;i<70;i++){
+
+                    var cube = cubes.children[i];
+
+                    //Move my cube
+                    cube.position.z = Math.sin(cube.random/70)*500;
+
+                    //Increase the start position of the cube
+                    cube.random += cube.speed;
+
+                }
+
+
+                renderer.render(scene, camera);
+            };
+
+            init();
     
     </script>
     
