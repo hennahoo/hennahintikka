@@ -21,7 +21,7 @@ var HEIGHT, WIDTH, windowHalfX, windowHalfY,
 
 //3D OBJECTS VARIABLES
 
-let hero;
+//var hero;
 
 //INIT THREE JS, SCREEN AND MOUSE EVENTS
 
@@ -121,6 +121,7 @@ function createFloor(){
 }
 
 function createHero() {
+  let hero;
   hero = new Cat();
   scene.add(hero.threeGroup);
 }
