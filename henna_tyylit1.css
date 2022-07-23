@@ -397,8 +397,8 @@ h3{
   }
   
   .slider > img {
-    flex: 0 0 calc(65% / var(--items-per-screen));
-    max-width: calc(65% / var(--items-per-screen));
+    flex: 0 0 calc(75% / var(--items-per-screen));
+    max-width: calc(75% / var(--items-per-screen));
     aspect-ratio: 4 / 3;
     padding: var(--img-gap);
     border-radius: 1rem;
