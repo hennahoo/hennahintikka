@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+ <!-- <meta name="viewport" content="with=device-width, initial-scale=1.0">       -->  
+        
+    
+        <!-- https://stackoverflow.com/questions/24851824/how-long-does-it-take-for-github-page-to-show-changes-after-changing-index-html 
+    
+    Github pages are cached with CDN.So the user has to clear the site cache everytime to load new changes.To overcome this you can use meta tags in the HTML code, 
+    they will load the webpage without caching.Include this in your index.html file.
+    
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    
+            -->
+        <meta http-equiv='cache-control' content='no-cache'> 
+        <meta http-equiv='expires' content='0'> 
+        <meta http-equiv='pragma' content='no-cache'>
+    
+    
+        <title>Portfolio Henna Hintikka</title>
+        <link rel="stylesheet" href="henna_tyylit1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e0be930c64.js" crossorigin="anonymous"></script>
+    
+        <!--
+    
+    https://fontawesome.com/v4/get-started/
+        Copy the entire font-awesome directory into your project.
+        In the <head> of your html, reference the location to your font-awesome.min.css.
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        Check out the examples to start using Font Awesome!
+                -->
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    
+    
+    <!-- KUVA KARUSELLIIN SKRIPTI -->
+        <script src="script.js" defer></script>
+    
+    <!-- VIDEOPLAYER SKRIPTI -->
+        <script src="script-videoplayer.js" defer></script>
+    
+    <!-- kissa three.js
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js" defer></script> -->
+
+                           <!-- testattu selaimella, löytyy -->
+<!--       <script src="https://threejs.org/build/three.js"></script>                             
+        <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>         -->
+ 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r70/three.min.js"></script>  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>  
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/264161/OrbitControls.js"></script>  
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/264161/Cat.js"></script>  
+
+
+
+
+
+    </head>
+    
+    
+    <body>
+    
+    <section class="header3">
+    <nav>
+        <!-- <a href="index.html"><img src="images/logoh2.PNG"></a>  -->
+        <div class="nav-links" id="navLinks">
+            <!--<i class="fa fa-times" aria-hidden="true"></i> -->
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+    
+    
+            <ul>
+              <li><a href="CV-Henna-Hintikka-2022.pdf">CV</a></li>
+              <li><a href="index.html">PORTFOLIO</a></li> 
+              <li><a href="projektit.html">PROJEKTIT</a></li>
+              <li><a href="harrastukset.html">HARRASTUKSET</a></li>
+            </ul>
+          </div>
+         <!-- <i class="fa fa-bars" aria-hidden="true"></i>-->
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    
+    <div class="text-box">
+        <h1> Henna Hintikka Harrastukset</h1>
+
+    <!--  <a href="" class="hero-btn">Tämä on nappi</a>  -->
+      
+    </div>    
+    </section>
+
+
+        <br>
+        <br>
+        <br>
+    
+        <section class="harraste">
+            <div>    
+                <h1>Harrastukseni</h1>
+                <p>Vapaa-ajalla tykkään tehdä kaikkea mikä on vastapainoa ruutuajalle. Luonto on minulle tärkeä paikka, metsässä samoilu ja järvellä veneily varsinkin.<br>
+                Olen myös kiinnostunut puettavasta teknologiasta (wearable technology), joissa pääsee toteuttamaan sekä koodipuolta että  kädentaitoja. Olen myös harjoitellu 3D mallien tekemistä, <br>
+                ja 3D-tulostimen käyttöä. 
+                </p>
+            </div>    
+
+            
+            
+                <div class="row">
+                    <div class="kuvakaruselli">
+                      <!--  <h3 class="title">Kuvakaruselli</h3>  -->
+                      <div class="progress-bar"></div>
+                    </div>
+                    <div class="container">
+                      <button class="handle left-handle">
+                        <div class="text">&#8249;</div>
+                      </button>
+                      <div class="slider">
+                        <img src="images/metsa.jpg"> 
+                        <img src="images/metsa2.jpg">
+                        <img src="images/metsa3.jpg"> 
+                        <img src="images/jarvi1.jpg">
+                        <img src="images/jarvi2.jpg"> 
+                        <img src="images/jarvi3.jpg">
+                        <img src="images/pico5.jpg"> 
+                        <img src="images/opencv.jpg">
+                        <img src="images/ledit.jpg"> 
+                        <img src="images/rpi3.jpg">
+              <!--          <a href ="https://github.com/hennahoo/soittorasia"> <img src="images/soittorasia1.jpg"> </a>  TAMA EI TOIMI NAIN! -->
+                        <img src="images/soittorasia1.jpg">
+                        <img src="images/3d_3.jpg">
+                        <img src="images/maustepieni.jpg">
+                        <img src="images/opntyo.jpg">
+                        <img src="images/rpi1.jpg">
+                        <img src="images/servo.jpg">
+            
+            
+                      </div>
+            
+                      <button class="handle right-handle">
+                      <div class="text">&#8250;</div>
+                    </button>
+                  </div>
+                </div>
+
+              </section> 
+   
+    
+    
+    
+    <!-- HIENOBOKSI-->
+    <section class="hienoboksi">
+        <h1>Github - </h1>
+    <a href="https://github.com/hennahoo" class="hero-btn"> hennahoo Github</a>
+    </section>
+    
+    
+    
+    
+    <!-- FOOTER -->
+    <section class="footer">
+        <h3> Henna Hintikka</h3>
+        <p>Yhteystiedot:</p>
+    
+        <div class="icons">
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-github" aria-hidden="true"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+    </section>
+
+    
+    
+        
+    
+    
+    </body>
+    </html>
