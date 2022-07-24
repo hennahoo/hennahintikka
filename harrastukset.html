@@ -42,8 +42,8 @@
     <!-- KUVA KARUSELLIIN SKRIPTI -->
         <script src="script.js" defer></script>
     
-    <!-- VIDEOPLAYER SKRIPTI -->
-        <script src="script-videoplayer.js" defer></script>
+    <!-- VIDEOPLAYER SKRIPTI 
+        <script src="script-videoplayer.js" defer></script>   -->
     
     <!-- kissa three.js
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js" defer></script> -->
@@ -58,7 +58,14 @@
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/264161/Cat.js"></script>  
 
 
+        <!-- Googlen 3D mallin viewer-->
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
+        <style>
+          .box {display: flex;}
+          model-viewer {width: 1024px; height: 768px; margin: 10, auto; padding-left: 20px; padding-right: 20px;}
+
+        </style>
 
 
     </head>
@@ -148,7 +155,29 @@
 
               </section> 
    
-    
+
+              <br>
+              <br>
+              <h3>3D malleja, web sivulla: </h3>
+
+
+
+      <!--     https://modelviewer.dev/editor/
+         
+        gbl malli kannattaa ensin testata googlen sivulla, josta tulee sitten tama alla oleva,  html koodi tahan.-->
+
+        <div class="box">
+          <div><p> </p></div>
+          <!-- <model-viewer src="https://cdn.glitch.global/9c23c50b-026a-40c4-bb31-9818eefc5ec4/altcv.glb?v=1643661074680"  -->
+          <model-viewer src="../../shared-assets/models/altcv.glb"
+                    alt=" "
+                    ar
+                    auto-rotate
+                    camera-controls></model-viewer>
+          </div>
+            
+              <br>
+              <br>
     
     
     <!-- HIENOBOKSI-->
