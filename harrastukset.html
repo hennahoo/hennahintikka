@@ -46,13 +46,14 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js" defer></script> -->
 
                            <!-- testattu selaimella, löytyy -->
-<!--       <script src="https://threejs.org/build/three.js"></script>                             
+        <script src="https://threejs.org/build/three.js"></script>                             
         <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>         -->
  
+    <!--
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r70/three.min.js"></script>  
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>  
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/264161/OrbitControls.js"></script>  
-        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/264161/Cat.js"></script>  
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/264161/Cat.js"></script>    -->
 
 
         <!-- Googlen 3D mallin viewer-->
@@ -175,24 +176,42 @@
 
 
 
-      <!--     https://modelviewer.dev/editor/
+
+
+
+    </section> 
+    
+
+
+
+<!--     https://modelviewer.dev/editor/
          
         gbl malli kannattaa ensin testata googlen sivulla, josta tulee sitten tama alla oleva,  html koodi tahan.-->
 
             
-        <div class="row">         <!--  RIVISSA rinnakkain sivulla -->
+        <table>
 
-          <div class="box">
-            <div><p> </p></div>
-              <model-viewer src="./leimasin.glb"
-                      alt=" "
-                      ar
-                      auto-rotate
-                      camera-controls></model-viewer>
-            </div>
-
-            
-
+          <tr>
+          <td>
+          
+            <div class="box">
+              <div><p> </p></div>
+                <model-viewer src="./leimasin.glb"
+                        alt=" "
+                        ar
+                        auto-rotate
+                        camera-controls></model-viewer>
+              </div>
+          
+          </td>
+          
+          
+          
+          
+          
+          
+          <td>  
+          
               <div class="video-container paused" data-volume-level="high">
                   <img class="thumbnail-img">
                   <div class="video-controls-container">
@@ -251,25 +270,36 @@
                           <path fill="currentColor" d="M19 7H5c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm0 8H5V9h14v6z"/>
                         </svg>
                       </button>
-                      <button class="full-screen-btn">
-                        <svg class="open" viewBox="0 0 24 24">
-                          <path fill="currentColor" d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
-                        </svg>
-                        <svg class="close" viewBox="0 0 24 24">
-                          <path fill="currentColor" d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                  <video src="assets/3D-tulostus-kk-leimasin.mp4">
-                  </video>
-                </div>
-   
-        </div>
+
+                      
+                       <button class="full-screen-btn">
+                          <svg class="open" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
+                          </svg>
+                          <svg class="close" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/>
+                          </svg>
+                        </button>
+                      </div>
+
+  
+</div>
+<video src="assets/3D-tulostus-kk-leimasin.mp4">
+</video>
+</div>
 
 
-    </section> 
-    
+
+</td>
+
+</tr>
+</table>
+
+
+
+
+
+
 
 
     <!-- HIENOBOKSI-->
