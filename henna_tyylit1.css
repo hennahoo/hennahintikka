@@ -233,7 +233,7 @@ nav .fa{
   text-align: left;
   padding-top: 100px;
   padding-left: 100px; 
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -245,9 +245,9 @@ h1{
         font-weight: 600;
 }
 p{
-        color: #777;
+        color: #2f4f4f;
         font-size: 16;
-        font-weight: 300;
+        font-weight: 400;
         line-height: 22px;
         padding: 10px;
 }
