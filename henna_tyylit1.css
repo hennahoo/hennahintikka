@@ -295,7 +295,7 @@ h3{
 }
 
 .cv-col{
-    flex-basis: 50%;
+    flex-basis: 100%;
     border-radius: 20px;
     margin-bottom: 30px;
     position: relative;
@@ -303,7 +303,7 @@ h3{
 }
 
 .cv-col img{
-    width: 50%;
+    width: 100%;
     display: block; /*jos kuvat olisivat saman kokoisia, tama pyoristaisi alareunan*/
 
 }
@@ -314,8 +314,8 @@ h3{
 .layer{
    /* background: rgba(226,0,0,0.7); */
     background: transparent;
-    height: 50%;
-    width: 50%;
+    height: 85%;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -323,7 +323,8 @@ h3{
 }
 
 .layer:hover{
-    background: rgba(39, 133, 26, 0.8);
+    background: rgb(126, 213, 224);
+    opacity: 90%;
 }
 
 .layer h3{
