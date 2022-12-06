@@ -11,7 +11,7 @@ marginaalit ja paddingit
 .header{
     min-height: 60vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/woman.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/cup-of-coffee.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -78,8 +78,8 @@ nav img{
 .nav-links ul li::after{
     content: '';
     width: 0%;
-    height: 2px;
-    background: #f44336;
+    height: 3px;
+    background: #f0ffff;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -121,7 +121,7 @@ nav img{
 }
 
 .hero-btn:hover{
-    border: 1px solid #f44336;
+    border: 1px solid #f0ffff;
     background: #f44336;
     transition: 1s;
 }
