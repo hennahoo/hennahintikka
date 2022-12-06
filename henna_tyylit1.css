@@ -165,9 +165,10 @@ nav .fa{
 .harraste{
        width: 80%;
        margin: auto;
-       text-align: center;
-       padding-top: 100px; 
-       font-size: 16px;
+       text-align: left;
+       padding-top: 100px;
+       padding-left: 100px; 
+       font-size: 14px;
        font-weight: 600;
 }
 
@@ -473,12 +474,12 @@ h3{
 */
 
   .video-container {
-    position: relative;
-    width: 70%;
-    max-width: 400px;
+    position: relative; 
+    width: 90%;
+    max-width: 600px;
     display: flex;
-    justify-content: center;
-    margin-inline: auto;
+    justify-content: left;
+    /*margin-inline: auto; */
     background-color: black;
   }
   
@@ -489,7 +490,7 @@ h3{
   }
   
   .video-container.theater {
-    max-height: 90vh;
+    max-height: 100vh;
   }
   
   .video-container.full-screen {
@@ -497,7 +498,7 @@ h3{
   }
   
   video {
-    width: 80%;
+    width: 100%;
   }
   
   .video-controls-container {
